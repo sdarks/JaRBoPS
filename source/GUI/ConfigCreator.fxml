@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="424.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ConfigController">
+   <children>
+      <Button layoutX="28.0" layoutY="245.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="31.0" text="-" fx:id="xTMinus" />
+      <Text layoutX="55.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Object to Scene" />
+      <ChoiceBox fx:id="addObjectBox" layoutX="48.0" layoutY="67.0" prefWidth="150.0" />
+      <Button fx:id="addObjectButton" layoutX="224.0" layoutY="67.0" mnemonicParsing="false" text="Add" />
+      <Separator layoutY="183.0" prefHeight="0.0" prefWidth="600.0" />
+      <Button fx:id="removeObjectButton" layoutX="493.0" layoutY="65.0" mnemonicParsing="false" text="Remove" />
+      <ChoiceBox fx:id="removeObjectBox" layoutX="317.0" layoutY="65.0" prefWidth="150.0" />
+      <Text layoutX="324.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Remove Object" />
+      <MenuBar fx:id="menu" prefHeight="32.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem fx:id="newMenuItem" mnemonicParsing="false" text="New" />
+                  <MenuItem fx:id="saveMenuItem" mnemonicParsing="false" text="Save" />
+                  <MenuItem fx:id="loadMenuItem" mnemonicParsing="false" text="Load" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Button layoutX="68.0" layoutY="245.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="31.0" text="+" fx:id="xTPlus" />
+      <Button fx:id="yTPlus" layoutX="68.0" layoutY="299.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="31.0" text="+" />
+      <Button fx:id="yTMinus" layoutX="27.0" layoutY="299.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="31.0" text="-" />
+      <Text layoutX="39.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Translate" />
+      <Button fx:id="zTMinus" layoutX="28.0" layoutY="345.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="31.0" text="-" />
+      <Button fx:id="zTPlus" layoutX="68.0" layoutY="345.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="31.0" text="+" />
+      <Text layoutX="60.0" layoutY="293.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Y" />
+      <Text layoutX="59.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" />
+      <Text layoutX="59.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Z" />
+      <CheckBox fx:id="fineControlT" layoutX="14.0" layoutY="389.0" mnemonicParsing="false" text="Fine Control" />
+      <CheckBox fx:id="fineControlR" layoutX="493.0" layoutY="391.0" mnemonicParsing="false" text="Fine Control" />
+      <Text layoutX="531.0" layoutY="343.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Z" />
+      <Text layoutX="531.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" />
+      <Text layoutX="531.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Y" />
+      <Button fx:id="zRPlus" layoutX="540.0" layoutY="348.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="31.0" text="+" />
+      <Button fx:id="zRMinus" layoutX="500.0" layoutY="348.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="31.0" text="-" />
+      <Text layoutX="517.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rotate" />
+      <Button fx:id="yRMinus" layoutX="502.0" layoutY="296.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="31.0" text="-" />
+      <Button fx:id="yRPlus" layoutX="541.0" layoutY="296.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="31.0" text="+" />
+      <Button layoutX="540.0" layoutY="243.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="31.0" text="+" fx:id="xRPlus" />
+      <Button layoutX="500.0" layoutY="243.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="31.0" text="-" fx:id="xRMinus" />
+      <Text layoutX="135.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Current Object" />
+      <ChoiceBox fx:id="currentObjectBox" layoutX="127.0" layoutY="240.0" prefWidth="150.0" />
+      <Button fx:id="testWindowButton" layoutX="246.0" layoutY="121.0" mnemonicParsing="false" text="Run Test Window" />
+      <Slider fx:id="inverseMassSlider" layoutX="132.0" layoutY="312.0" majorTickUnit="250.0" max="1000.0" showTickLabels="true" showTickMarks="true" />
+      <Text layoutX="137.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inverse Mass :" />
+      <Text fx:id="inverseMassText" layoutX="224.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+      <CheckBox fx:id="canMoveBox" layoutX="400.0" layoutY="329.0" mnemonicParsing="false" text="Movable?" />
+      <CheckBox fx:id="gravityBox" layoutX="321.0" layoutY="330.0" mnemonicParsing="false" text="Gravity?" />
+      <Slider fx:id="gravSlider" blockIncrement="1.0" layoutX="53.0" layoutY="129.0" majorTickUnit="5.0" max="20.0" min="-20.0" minorTickCount="1" showTickLabels="true" showTickMarks="true" value="-9.0" />
+      <Slider fx:id="elasSlider" blockIncrement="0.01" layoutX="407.0" layoutY="129.0" majorTickUnit="1.0" max="2.0" min="-1.0" minorTickCount="1" showTickLabels="true" showTickMarks="true" value="-0.4" />
+      <Text layoutX="76.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gravity:" />
+      <Text layoutX="422.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Elasticity:" />
+      <Text fx:id="gravText" layoutX="134.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+      <Text fx:id="elasText" layoutX="490.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+      <Slider fx:id="velXSlider" blockIncrement="1.0" layoutX="333.0" layoutY="237.0" majorTickUnit="5.0" max="20.0" min="-20.0" minorTickCount="1" showTickMarks="true" />
+      <Slider fx:id="velYSlider" blockIncrement="1.0" layoutX="333.0" layoutY="267.0" majorTickUnit="5.0" max="20.0" min="-20.0" minorTickCount="1" showTickMarks="true" />
+      <Slider fx:id="velZSlider" blockIncrement="1.0" layoutX="333.0" layoutY="300.0" majorTickUnit="5.0" max="20.0" min="-20.0" minorTickCount="1" showTickMarks="true" />
+      <Text layoutX="344.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Initial Velocity" />
+      <Text fx:id="velXText" layoutX="477.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+      <Text fx:id="velYText" layoutX="477.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+      <Text fx:id="velZText" layoutX="477.0" layoutY="311.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+      <Text layoutX="317.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" />
+      <Text layoutX="318.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Y" />
+      <Text layoutX="318.0" layoutY="311.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Z" />
+   </children>
+</Pane>
